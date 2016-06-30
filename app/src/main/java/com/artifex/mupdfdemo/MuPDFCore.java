@@ -178,7 +178,7 @@ public class MuPDFCore
 	{
 		if (page > numPages-1)
 			page = numPages-1;
-		else if (page < 0)
+		if (page < 0)
 			page = 0;
 		gotoPageInternal(page);
 		this.pageWidth = getPageWidth();
